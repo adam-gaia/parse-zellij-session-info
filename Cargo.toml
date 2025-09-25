@@ -1,0 +1,18 @@
+[package]
+name = "parse-zellij-session-info"
+description = "Parse output from 'zellij list-sessions'"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+homepage = "https://github.com/adam-gaia/parse-zellij-session-info"
+repository = "https://github.com/adam-gaia/parse-zellij-session-info"
+include = ["src/**/*", "LICENSE-*", "README.md"]
+authors = ["Adam Gaia <git@agaia.dev"]
+
+[dependencies]
+anyhow = "1.0.98"
+jiff = { version = "0.2.15", features = ["serde"] }
+serde = { version = "1.0.226", features = ["derive"] }
+serde_json = "1.0.145"
+winnow = "0.7.13"
+winnow-parse-error = "0.1.0"
